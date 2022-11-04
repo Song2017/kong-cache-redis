@@ -1,12 +1,23 @@
-# kong-cache-redis
-Kong cache with redis. And we can have a try with docker-compose easily.
+# LabSpace
+lab space.
 
-## Start Kong with Docker Compose
-Bring up kong cluster
+## Development
+Bring up kong cluster:
 ```bash
 docker-compose -f docker-compose.kong.yml up
 ```
 
-## Kong Cache with Redis
-1. [Custom Kong Plugin](./kong/readme.md#plugin-development-guide)
-2. [Test Kong Cache](./kong/readme.md#test-kong-cache)
+## PGAdmin
+### Access to PgAdmin: 
+* **URL:** [http://localhost:5050](http://localhost:5050)
+* **Username:** user@domain.com (as a default)
+* **Password:** SuperSecret (as a default)
+
+### Add a new server in PgAdmin:
+* **PostgresHost** as `POSTGRES_HOST`, by default: `kong-database`
+
+## Kong
+1. [Configuring a Service](./kong/readme.md#configuring-a-service)
+2. [Enabling Plugins](./kong/readme.md#enabling-plugins)
+3. [Adding Consumers](./kong/readme.md#adding-consumers)
+4. [Enabling Plugins](./kong/readme.md#plugin-development-guide)
